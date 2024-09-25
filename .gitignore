@@ -27,5 +27,43 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Capacitor build directories
+android/
+ios/
+build/
+
+# Capacitor configuration files
+capacitor.config.json
+
 # Optional eslint cache
 .eslintcache
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Ionic/Capacitor specific
+.sourcemaps
+xcuserdata/
+Pods/
+*.map
+Podfile.lock
+*.iml
+.gradle/
+.settings/
+.project
+capacitor-build.log

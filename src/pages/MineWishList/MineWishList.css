@@ -1,0 +1,11 @@
+.list {
+  margin-top: 3rem;
+  max-height: initial;
+  overflow-y: auto;
+}
+
+.imgSize {
+     width: 10rem;
+     margin: 0 auto;
+ }
+}

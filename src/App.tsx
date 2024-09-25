@@ -32,6 +32,8 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Login from './pages/Login/Login';
+import MineWishList from './pages/MineWishList/MineWishList';
 
 setupIonicReact();
 
@@ -42,9 +44,12 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        {/* <Route exact path="/">
+          <Redirect to="/login" />
+        </Route> */}
+        <Route path="/login" component={Login} exact={true} />
+        <Route path="/wishList" component={MineWishList} exact={true} />
+        <Redirect exact from="/" to="/login" />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
